@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad y Números Primos</title>
+    <link rel="stylesheet" href="../primos/css/estilos.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Números Primos en la Seguridad</h1>
+            <p class="author">Por: Beymar Orlando Loza Mayta</p>
+        </header>
+
+        <section class="explanation">
+            <p>
+                Para entender por qué un número primo es la base de la seguridad digital, 
+                debemos pensar en la diferencia entre <strong>construir</strong> y <strong>desarmar</strong>. 
+                En criptografía, no queremos que nadie pueda "desarmar" nuestra clave para ver la información protegida.
+            </p>
+            <div class="example-box">
+                <p><strong>Ejemplo de multiplicación:</strong> 17 × 23 = 391</p>
+                <p>Es instantáneo para una PC crear el 391, pero es extremadamente difícil para una máquina común adivinar que los números originales fueron 17 y 23.</p>
+            </div>
+            <p>
+                En la seguridad real (como el cifrado RSA), se utilizan números primos tan inmensos que a una supercomputadora le tomaría miles de años factorizarlos. Si el número no fuera primo, se encontrarían sus divisores en segundos, rompiendo la seguridad.
+            </p>
+        </section>
+        <br><br>
+        <div class="contenedor-foto">
+            <img src="../primos/img/image.png" class="imagen">
+            <figcaption>Codigo de JavaScript</figcaption>
+        </div>
+        <br><br>
+        <section class="tool">
+            <p>Comprueba si un número posee esta característica fundamental de seguridad:</p>
+            <form id="formulario">
+                <div class="input-group">
+                    <label for="n">Introduce tu número:</label>
+                    <input type="number" placeholder="Ej. 17" id="n" required>
+                </div>
+                <button type="submit">Verificar</button>
+            </form>
+            <div id="resultado" class="result-message"></div>
+        </section>
+
+        <footer>
+            <p>En el mundo digital, las matemáticas son el escudo que mantiene nuestra información privada segura.</p>
+        </footer>
+    </main>
+    <script src="../primos/js/script.js"></script>
+</body>
+</html>
